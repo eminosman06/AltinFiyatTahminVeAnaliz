@@ -1,3 +1,5 @@
+##AltinFiyatTahminVeAnaliz
+
 📈 Altın Fiyat Tahmini ve Analizi (Gold Price Prediction & Analysis)
 
 Bu proje, altın fiyatlarının tarihsel verileri kullanılarak hem klasik makine öğrenmesi yöntemleri hem de derin öğrenme (LSTM) ile fiyat tahmini yapılmasını amaçlamaktadır. Projede veri ön işleme, görselleştirme, zaman serisi analizi ve farklı regresyon modellerinin karşılaştırılması yer almaktadır.
