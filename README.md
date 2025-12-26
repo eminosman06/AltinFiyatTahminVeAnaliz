@@ -142,4 +142,7 @@ Yatırım tavsiyesi değildir.
 
 ## 👤 Geliştirici
 
-Emin Osman Toprak @rahmiisahdalii
+Emin Osman Toprak & Rahmi Şahdalı
+
+
+Url: https://github.com/rahmiisahdalii
