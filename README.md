@@ -142,5 +142,4 @@ Yatırım tavsiyesi değildir.
 
 ## 👤 Geliştirici
 
-Emin Osman Toprak
-Computer Engineering | Data Science & AI | Cybersecurity
+Emin Osman Toprak @rahmiisahdalii
