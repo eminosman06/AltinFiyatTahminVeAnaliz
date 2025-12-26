@@ -3,16 +3,9 @@
 
 Bu proje, altın fiyatlarının tarihsel verileri kullanılarak hem klasik makine öğrenmesi yöntemleri hem de derin öğrenme (LSTM) ile fiyat tahmini yapılmasını amaçlamaktadır. Projede veri ön işleme, görselleştirme, zaman serisi analizi ve farklı regresyon modellerinin karşılaştırılması yer almaktadır.
 
-## ⚠️ Önemli Nokta: Bu proje Makine Öğrenmesi dersi dönem projesi olarak yapılmış olup projede derste işlenen makine öğrenmesi metotlarının uygulanması zorunlu tutulmuştur. Projede altın fiyat analizinde ya da tahmininde yani zaman serisi sorununda kullanılmayan KNN, SVM, Random Forest gibi algoritmalara da yer verilmiş ancak projede anlamsızlıkları da sunum esnasında anlatılmıştır. Tüm bunlara ek olarak derste işlenmeyen ve Derin Öğrenme algoritması olan LSTM algoritması bu projede kullanıldığı için ciddi puan kırıldığından dersten kaldım. Bu projeye forklayacağım ikinci proje yine bu projenin aynısı olsa da ders için ideal haldedir.
+## ⚠️ Önemli Nokta: Bu proje Mayıs 2024 tarihinde Makine Öğrenmesi dersi dönem projesi olarak yapılmış olup projede derste işlenen makine öğrenmesi metotlarının uygulanması zorunlu tutulmuştur. Projede altın fiyat analizinde ya da tahmininde yani zaman serisi sorununda kullanılmayan KNN, SVM, Random Forest gibi algoritmalara da yer verilmiş ancak projede anlamsızlıkları da sunum esnasında anlatılmıştır. Tüm bunlara ek olarak derste işlenmeyen ve Derin Öğrenme algoritması olan LSTM algoritması bu projede kullanıldığı için ciddi puan kırıldığından dersten kaldım. Bu projeye forklayacağım ikinci proje yine bu projenin aynısı olsa da ders için ideal haldedir.
 
 ## 📌 Çalışma, Jupyter Notebook / Google Colab ortamında geliştirilmiştir.
-
-## 📂 Proje Dosya Yapısı
-AltinFiyatTahminVeAnaliz/
-│
-├── Tahmin_proje.ipynb     # Tüm analiz, modelleme ve görselleştirme adımları
-├── goldstock.csv         # Altın fiyatlarına ait tarihsel veri seti
-└── README.md             # Proje açıklamaları
 
 ## 📊 Kullanılan Veri Seti
 
