@@ -1,21 +1,21 @@
-##AltinFiyatTahminVeAnaliz
 
-📈 Altın Fiyat Tahmini ve Analizi (Gold Price Prediction & Analysis)
+
+#📈 Altın Fiyat Tahmini ve Analizi (Gold Price Prediction & Analysis)
 
 Bu proje, altın fiyatlarının tarihsel verileri kullanılarak hem klasik makine öğrenmesi yöntemleri hem de derin öğrenme (LSTM) ile fiyat tahmini yapılmasını amaçlamaktadır. Projede veri ön işleme, görselleştirme, zaman serisi analizi ve farklı regresyon modellerinin karşılaştırılması yer almaktadır.
 
-⚠️ Önemli Nokta: Bu proje Makine Öğrenmesi dersi dönem projesi olarak yapılmış olup projede derste işlenen makine öğrenmesi metotlarının uygulanması zorunlu tutulmuştur. Projede altın fiyat analizinde ya da tahmininde yani zaman serisi sorununda kullanılmayan KNN, SVM, Random Forest gibi algoritmalara da yer verilmiş ancak projede anlamsızlıkları da sunum esnasında anlatılmıştır. Tüm bunlara ek olarak derste işlenmeyen ve Derin Öğrenme algoritması olan LSTM algoritması bu projede kullanıldığı için ciddi puan kırıldığından dersten kaldım. Bu projeye forklayacağım ikinci proje yine bu projenin aynısı olsa da ders için ideal haldedir.
+##⚠️ Önemli Nokta: Bu proje Makine Öğrenmesi dersi dönem projesi olarak yapılmış olup projede derste işlenen makine öğrenmesi metotlarının uygulanması zorunlu tutulmuştur. Projede altın fiyat analizinde ya da tahmininde yani zaman serisi sorununda kullanılmayan KNN, SVM, Random Forest gibi algoritmalara da yer verilmiş ancak projede anlamsızlıkları da sunum esnasında anlatılmıştır. Tüm bunlara ek olarak derste işlenmeyen ve Derin Öğrenme algoritması olan LSTM algoritması bu projede kullanıldığı için ciddi puan kırıldığından dersten kaldım. Bu projeye forklayacağım ikinci proje yine bu projenin aynısı olsa da ders için ideal haldedir.
 
-📌 Çalışma, Jupyter Notebook / Google Colab ortamında geliştirilmiştir.
+##📌 Çalışma, Jupyter Notebook / Google Colab ortamında geliştirilmiştir.
 
-📂 Proje Dosya Yapısı
+##📂 Proje Dosya Yapısı
 AltinFiyatTahminVeAnaliz/
 │
 ├── Tahmin_proje.ipynb     # Tüm analiz, modelleme ve görselleştirme adımları
 ├── goldstock.csv         # Altın fiyatlarına ait tarihsel veri seti
 └── README.md             # Proje açıklamaları
 
-📊 Kullanılan Veri Seti
+##📊 Kullanılan Veri Seti
 
 Veri seti goldstock.csv dosyasında yer almakta olup aşağıdaki sütunları içermektedir:
 
@@ -27,13 +27,13 @@ Low	Gün içi en düşük fiyat
 Close	Kapanış fiyatı (hedef değişken)
 Volume	İşlem hacmi
 
-📌 Hedef değişken: Close (Kapanış Fiyatı)
+##📌 Hedef değişken: Close (Kapanış Fiyatı)
 
-⚙️ Kullanılan Kütüphaneler
+##⚙️ Kullanılan Kütüphaneler
 pip install pandas numpy matplotlib seaborn plotly scikit-learn tensorflow keras mplfinance
 
 
-Projede kullanılan başlıca teknolojiler:
+##Projede kullanılan başlıca teknolojiler:
 
 Pandas / NumPy – Veri işleme
 
@@ -43,8 +43,8 @@ Scikit-learn – Regresyon modelleri
 
 TensorFlow / Keras – LSTM tabanlı derin öğrenme modeli
 
-🔎 Proje Aşamaları
-1️⃣ Veri Ön İşleme
+##🔎 Proje Aşamaları
+##1️⃣ Veri Ön İşleme
 
 Eksik veri kontrolü
 
@@ -54,7 +54,7 @@ Zaman sıralamasına göre düzenleme
 
 Normalizasyon (MinMaxScaler)
 
-2️⃣ Veri Görselleştirme
+##2️⃣ Veri Görselleştirme
 
 Candlestick (Mum Grafik) – mplfinance
 
@@ -62,14 +62,14 @@ Zaman serisi çizgi grafikleri
 
 Eğitim / test veri ayrımının görselleştirilmesi
 
-📊 Amaç: Altın fiyatlarının zaman içindeki trend ve dalgalanmalarını gözlemlemek
+##📊 Amaç: Altın fiyatlarının zaman içindeki trend ve dalgalanmalarını gözlemlemek
 
-3️⃣ LSTM ile Zaman Serisi Tahmini (Derin Öğrenme)
+##3️⃣ LSTM ile Zaman Serisi Tahmini (Derin Öğrenme)
 
 🔹 Pencere Boyutu (Window Size): 60 gün
 🔹 Test Seti: 2023 yılı (250 gün)
 
-Model Mimarisi:
+##Model Mimarisi:
 
 3 adet LSTM katmanı (64 nöron)
 
@@ -79,11 +79,11 @@ Dense katmanlar
 
 Optimizer: Nadam
 
-Kayıp fonksiyonu: Mean Squared Error (MSE)
+##Kayıp fonksiyonu: Mean Squared Error (MSE)
 
 Input → LSTM → Dropout → LSTM → Dropout → LSTM → Dense → Output
 
-📈 LSTM Model Sonuçları
+##📈 LSTM Model Sonuçları
 Metrik	Değer
 Test Loss (MSE)	0.00094
 MAPE	%2.8
@@ -91,7 +91,7 @@ Accuracy	%97.19
 
 📌 Gerçek test verisi ile tahmin edilen değerler grafik üzerinde karşılaştırılmıştır.
 
-4️⃣ Klasik Makine Öğrenmesi Modelleri
+##4️⃣ Klasik Makine Öğrenmesi Modelleri
 
 LSTM dışında karşılaştırma amacıyla aşağıdaki modeller de uygulanmıştır:
 
@@ -100,22 +100,22 @@ LSTM dışında karşılaştırma amacıyla aşağıdaki modeller de uygulanmı�
 ✔ Lasso Regression
 ✔ Ridge Regression
 
-Bu modeller:
+##Bu modeller:
 
 Open, High, Low, Volume → Close tahmini için kullanılmıştır.
 
 Gerçek vs tahmin edilen değerler scatter plot ile görselleştirilmiştir.
 
-📊 Model Karşılaştırması
+##📊 Model Karşılaştırması
 Model	Kullanım Amacı
 Linear Regression	Baseline model
 Polynomial Regression	Non-lineer ilişki yakalama
 Lasso / Ridge	Regularization etkisi
 LSTM	Zaman serisi bağımlılığını öğrenme
 
-📌 En başarılı sonuç LSTM modeli ile elde edilmiştir.
+##📌 En başarılı sonuç LSTM modeli ile elde edilmiştir.
 
-🚀 Nasıl Çalıştırılır?
+##🚀 Nasıl Çalıştırılır?
 Google Colab
 
 Notebook’u aç
@@ -131,7 +131,7 @@ git clone https://github.com/eminosman06/AltinFiyatTahminVeAnaliz.git
 cd AltinFiyatTahminVeAnaliz
 jupyter notebook
 
-🧠 Geliştirme Önerileri
+##🧠 Geliştirme Önerileri
 
 🔹 ARIMA / SARIMA / Prophet eklenebilir
 
@@ -143,12 +143,12 @@ jupyter notebook
 
 🔹 Model karşılaştırma tablosu (RMSE, R²)
 
-⚠️ Uyarı
+##⚠️ Uyarı
 
 Bu proje akademik ve deneysel amaçlıdır.
 Yatırım tavsiyesi değildir.
 
-👤 Geliştirici
+##👤 Geliştirici
 
 Emin Osman Toprak
 Computer Engineering | Data Science & AI | Cybersecurity
